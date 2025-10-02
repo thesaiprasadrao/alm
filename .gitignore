@@ -21,4 +21,12 @@
 # Ignore metadata files that may be part of datasets
 *.csv
 *.tsv
+./venv/
+./master_metadata.csv
+*.pdf
+*.md
+*.mlapp
+*.txt
+
+venv/
 
