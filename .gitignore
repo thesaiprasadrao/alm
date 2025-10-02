@@ -1,32 +1,45 @@
-# Ignore the main dataset directories and their contents
+# Ignore large dataset directories
 /Mixed Audio/
-/dataset/
-/Dataset/
-/UrbanSound8K/
-/ESC-50/
-/TUT-acoustic-scenes-2017/
-/__MACOSX/
+/Non Speech Audio/
+/Speech Audio/
+/processed_data/
 
-# Ignore all audio and archive files
+# Ignore virtual environment
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore model checkpoints (too large for git)
+checkpoints/
+*.pkl
+*.pt
+*.pth
+
+# Ignore test results
+test_results_*.json
+performance_summary*.json
+
+# Ignore large audio files in root (keep small test files)
 *.wav
 *.mp3
 *.flac
 *.m4a
 *.ogg
-*.zip
-*.tar
-*.tar.gz
-*.7z
 
-# Ignore metadata files that may be part of datasets
-*.csv
-*.tsv
-./venv/
-./master_metadata.csv
-*.pdf
-*.md
-*.mlapp
-*.txt
+# Ignore temporary files
+*.tmp
+*.log
+*.bak
+.DS_Store
+Thumbs.db
 
-venv/
+# Ignore IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
 
+# Ignore large metadata files
+master_metadata.csv
