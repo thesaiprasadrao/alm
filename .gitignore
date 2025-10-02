@@ -1,0 +1,24 @@
+# Ignore the main dataset directories and their contents
+/Mixed Audio/
+/dataset/
+/Dataset/
+/UrbanSound8K/
+/ESC-50/
+/TUT-acoustic-scenes-2017/
+/__MACOSX/
+
+# Ignore all audio and archive files
+*.wav
+*.mp3
+*.flac
+*.m4a
+*.ogg
+*.zip
+*.tar
+*.tar.gz
+*.7z
+
+# Ignore metadata files that may be part of datasets
+*.csv
+*.tsv
+
