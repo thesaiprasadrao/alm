@@ -11,8 +11,8 @@ __pycache__/
 *.pyo
 *.pyd
 
-# Ignore model checkpoints (too large for git)
-checkpoints/
+# Ignore large model files (but keep checkpoints folder structure)
+# checkpoints/  # Commented out - we want to include the folder
 *.pkl
 *.pt
 *.pth
